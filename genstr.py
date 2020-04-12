@@ -16,7 +16,7 @@ def genRandChar():
     return random.choice(string.digits)
 
 def genStrFromDict():
-    times = random.randint(5,8)
+    times = random.randint(2,4)
     str_list = random.sample(billyDict, times)
     for i in range(len(str_list)):
         if i == 0:
@@ -48,4 +48,5 @@ def randRepChar(src):
     return target
 
 def outputTarget():
-    return randRepChar(genStrFromDict())
+    len = random.randint(12,16)
+    return randRepChar(genStrFromDict())[:len]
